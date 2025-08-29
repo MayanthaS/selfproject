@@ -134,7 +134,7 @@ footer{
     list-style: none;
     margin: 0;
     padding: 0;
-    display: inline;
+
     
 }
 .social-media  a{
@@ -154,4 +154,32 @@ footer{
     opacity: 0.2;
     padding: 10px ;
     border-radius: 10px;
+}
+.Contact {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: flex-start;   /* align items top aligned */
+               /* space between form and aside */
+  padding:10px 10px  10px 20px;
+}
+
+/* Make both children share space */
+.Contact .main-section,
+.Contact .aside {
+  flex: 1;   /* each takes 50% */
+  max-width: 500px;
+}
+
+/* Responsive: stack them below 865px */
+@media (max-width: 865px) {
+  .Contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Contact .main-section,
+  .Contact .aside {
+    width: 100%;
+    max-width: 600px;
+  }
 }
