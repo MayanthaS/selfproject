@@ -84,6 +84,7 @@ body{
     text-align: center;
     padding: 50px 0;
     overflow: hidden;
+    opacity: 0.9;
 }
 .main-section{
     float: left;
@@ -106,4 +107,24 @@ input,textarea{
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
+}
+footer{
+    background-color: #211C84;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.social-media{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.social-media  a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+   
+    display:inline
 }
